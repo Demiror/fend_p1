@@ -16,3 +16,18 @@ body {
   display: block;
   background-attachment: fixed;
 }
+
+.my-info {
+  margin: 0;
+}
+
+.name {
+  margin: 0;
+  padding: 1.5em;
+  border: 1px solid black;
+  display: inline-block;
+  position: fixed;
+  bottom: 15%;
+  left: 5%;
+  font-size: 6em;
+}
