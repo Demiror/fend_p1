@@ -15,7 +15,7 @@ gulp.task('default', [
 	function() {
 	gulp.watch('src/**/*.css')
 		.on('change', browserSync.reload);
-	gulp.watch('src/js/**/*.js', ['lint'])
+	gulp.watch('src/js/main.js', ['lint'])
 		.on('change', browserSync.reload);
 	gulp.watch('src/index.html')
 		.on('change', browserSync.reload);
@@ -26,12 +26,12 @@ gulp.task('default', [
 });
 
 gulp.task('copy-styles', function() {
-	gulp.src('src/**/*.scss')
+	gulp.src('src/css/main.scss')
 		.pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
 		.pipe(autoprefixer({
 			browsers: ['last 2 versions']
 		}))
-		.pipe(gulp.dest('dist/'))
+		.pipe(gulp.dest('dist/css/'))
 });
 
 gulp.task('lint', function () {
@@ -68,7 +68,7 @@ gulp.task('copy-images', function() {
 });
 
 gulp.task('copy-scripts', function() {
-	gulp.src('src/js/**/*.js')
+	gulp.src('src/js/main.js')
 		//.pipe(concat('all.min.js'))
 		.pipe(uglify())
 		.pipe(gulp.dest('dist/js'));
