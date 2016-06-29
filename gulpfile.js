@@ -13,7 +13,7 @@ var inlinesource = require('gulp-inline-source');
 gulp.task('default', [
 	'lint'],
 	function() {
-	gulp.watch('src/**/*.css')
+	gulp.watch('src/css/main.css')
 		.on('change', browserSync.reload);
 	gulp.watch('src/js/main.js', ['lint'])
 		.on('change', browserSync.reload);
