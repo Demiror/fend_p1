@@ -1,3 +1,13 @@
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: "FontAwesome", sans-serif;
+  font-size: 2em;
+  /*color: #333;*/
+  padding: 5px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -5,19 +15,23 @@
 #landing {
   height: 100vh;
   width: 100%;
-  background: url("../img/welcome.jpg");
+  background: url("img/welcome.jpg");
   background-position: center;
   background-size: cover;
   display: block;
 }
 
+.my-nav {
+  background: rgba(34, 34, 34, 0.75);
+}
+
 .spacer {
-  height: 65vh;
+  height: 58vh;
 }
 
 .info-card {
   display: inline-block;
-  margin: 4vmin;
+  margin: 5vmin;
   padding: 2vmin;
   background: rgba(204, 204, 204, 0.6);
   text-transform: uppercase;
@@ -37,6 +51,23 @@
   font-size: 2.5vmin;
 }
 
+address {
+  margin: 0;
+}
+
+.contact-info {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style-type: none;
+}
+
+.ind-contact {
+  padding-right: 2em;
+  text-decoration: none !important;
+  color: #333;
+}
+
 .section-title {
   width: 250px;
   font-weight: bolder;
@@ -44,12 +75,13 @@
   border: 1px solid #999;
   display: inline-block;
   padding: 10px;
-  margin-top: 10vh;
+  margin-top: 8vh;
 }
 
 #about {
   background-color: #333;
   color: #999;
+  padding-bottom: 5vh;
 }
 
 .my-pics {
@@ -80,6 +112,14 @@
   color: #999;
 }
 
+footer {
+  background: #222;
+}
+
+a > li.inverse {
+  color: #999;
+}
+
 @media(min-width:768px) {
     .navbar-custom {
         font-size: 125%;
@@ -92,7 +132,7 @@
     .navbar-custom.large {
         padding: 16px 0;
         text-shadow: 2px 2px 4px #000;
-        background: rgba(51, 51, 51, 0.5);
+        background: transparent;
         border-bottom: 0;
         color: #000 !important;
     }
