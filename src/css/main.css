@@ -53,13 +53,15 @@
 
 address {
   margin: 0;
+  clear: both;
 }
 
 .contact-info {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   list-style-type: none;
+  justify-content: space-around;
 }
 
 .ind-contact {
@@ -82,6 +84,20 @@ address {
   background-color: #333;
   color: #999;
   padding-bottom: 5vh;
+}
+
+.about-me{
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.tools {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tool {
+  max-height: 100px;
 }
 
 .my-pics {
@@ -107,9 +123,13 @@ address {
 }
 
 #work {
-  height: 100vh;
   background-color: #101010;
   color: #999;
+}
+
+.project-title {
+  margin: 0;
+  padding: 0.5em 0 2em;
 }
 
 footer {
