@@ -132,6 +132,14 @@ address {
   padding: 0.5em 0 2em;
 }
 
+.tech {
+  background-color: #333;
+  display: inline-block;
+  border-radius: 3px;
+  padding: 2px;
+  margin: 4px 2px;
+}
+
 footer {
   background: #222;
 }
