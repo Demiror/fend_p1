@@ -1,6 +1,4 @@
 var gulp = require('gulp');
-var sass = require('gulp-sass');
-var autoprefixer = require('gulp-autoprefixer');
 var browserSync = require('browser-sync').create();
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
@@ -24,13 +22,7 @@ gulp.task('default',
   });
 
 gulp.task('copy-styles', function () {
-  gulp.src('src/css/main.scss')
-    .pipe(sass({
-      outputStyle: 'compressed',
-    }).on('error', sass.logError))
-    .pipe(autoprefixer({
-      browsers: ['last 2 versions'],
-    }))
+  gulp.src('src/css/*.css')
     .pipe(gulp.dest('dist/css/'));
 });
 
