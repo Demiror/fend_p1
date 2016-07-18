@@ -106,14 +106,24 @@ address {
 }
 
 .img-cat {
-  margin-top: 55px;
   max-height: 12vh;
-  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.lui {
+  float: left;
+  margin-right: 15px;
+}
+
+.leo {
+  float: right;
+  margin-left: 15px;
 }
 
 .img-me {
-  margin-bottom: 55px;
-  display: inline-block;
+  /*display: inline-block;*/
+  float: left;
+  margin-right: 15px;
 }
 
 .center-pics {

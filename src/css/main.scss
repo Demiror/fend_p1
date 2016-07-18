@@ -106,14 +106,24 @@ address {
 }
 
 .img-cat {
-  margin-top: 55px;
   max-height: 12vh;
-  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.lui {
+  float: left;
+  margin-right: 15px;
+}
+
+.leo {
+  float: right;
+  margin-left: 15px;
 }
 
 .img-me {
-  margin-bottom: 55px;
-  display: inline-block;
+  /*display: inline-block;*/
+  float: left;
+  margin-right: 15px;
 }
 
 .center-pics {
@@ -130,6 +140,14 @@ address {
 .project-title {
   margin: 0;
   padding: 0.5em 0 2em;
+}
+
+.tech {
+  background-color: #333;
+  display: inline-block;
+  border-radius: 3px;
+  padding: 2px;
+  margin: 4px 2px;
 }
 
 footer {
