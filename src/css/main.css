@@ -134,8 +134,12 @@ address {
   color: #999;
 }
 
-.img-responsive {
+.work-img {
   margin: 0 auto;
+}
+
+.img-responsive {
+  margin-top: 15px;
 }
 
 .project-title {
